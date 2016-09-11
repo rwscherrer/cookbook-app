@@ -1,0 +1,16 @@
+
+
+<h1><%= recipe.title %></h1>
+<h2>By: <%= recipe.chef %></h2>
+<h2>Time: <%= recipe.prep_time %></h2>
+<h2>Ingredients: <%= recipe.ingredients %>/h2>
+<h2>Directions: <%= recipe.directions %></h2>
+<br>
+
+<%= link_to 'Home', '/recipes' %>
+<br>
+<%= link_to 'Edit', "/recipes/#{@recipe.id}/edit" %>
+<br>
+<%= link_to 'Delete', "/recipes/#{@recipe.id}", method: :delete %>
+<br>
+<% end %>
